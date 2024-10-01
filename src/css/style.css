@@ -532,6 +532,7 @@ body {
 
 .cart-container__img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .last-img {
