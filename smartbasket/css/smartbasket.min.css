@@ -594,7 +594,7 @@
 }
 
 .smart-basket__input-wrapper {
-	width: 49%;
+	width: 40%;
 	padding-bottom: 0;
 	border-radius: 3px;
 	-webkit-transition: .5s;
@@ -615,7 +615,8 @@
 	-o-transition: .5s;
 	transition: .5s;
 	-webkit-box-shadow: #1bbc9b 0 3px 0 0;
-	box-shadow: #1bbc9b 0 3px 0 0
+	box-shadow: #1bbc9b 0 3px 0 0;
+	border-radius: 40px;
 }
 
 .smart-basket__input-wrapper_error {

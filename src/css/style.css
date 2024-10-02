@@ -558,6 +558,15 @@ body {
   margin-bottom: 280px;
 }
 
+.second-section__btn {
+  background-color: #F5EAD9;
+  border: none;
+}
+
+.second-section__text:hover {
+  color: #49202C;
+}
+
 .third-section {
   display: flex;
   flex-direction: row;
@@ -682,6 +691,18 @@ body {
   background-color: #F5EAD9;
 }
 
+.five-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.five-section__title {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 .product__quantity {
   width: 100px;
   margin-right: 30px;
@@ -756,4 +777,151 @@ body {
   font-size: 14px;
   font-family: "intel";
   color: #7A2841;
+}
+
+.modal-window {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-window__box {
+  position: relative;
+  max-width: 500px;
+  padding: 45px;
+  margin: 30px 15px;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 10px 0px rgba(34, 60, 80, 0.2);
+  transform: scale(0);
+  transition: transform .8s;
+}
+
+.modal-window__btn {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.modal-window__close-btn {
+  width: 28px;
+}
+
+.modal-window__text {
+  color: #7A2841;
+  font-size: 20px;
+  font-family: "intel";
+  text-align: center;
+}
+
+.modal-window.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box.open {
+  transform: scale(1);
+  border-radius: 5px;
+  background-color: #FCF1E0;
+}
+
+.modal-window-undes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-window-title {
+  font-size: 24px;
+  font-family: "play";
+  margin-bottom: 40px;
+  color: #49202C;
+}
+
+.modal-window-input {
+  margin-bottom: 20px;
+  height: 30px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+}
+
+.forma-vkhoda {
+  color: white;
+  text-decoration: none;
+  font-family: "roboto";
+}
+
+.forma-vkhoda:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.forma-vkhoda__btn {
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  height: 50px;
+  width: 160px;
+}
+
+.carousel {
+  margin-bottom: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.carousel__img {
+  height: 130px;
+  width: 130px;
+  margin-bottom: 30px;
+}
+
+.carousel__text {
+  max-width: 810px;
+  text-align: center;
+}
+
+.carousel__btn {
+  background-color: #7A2841;
+  border-radius: 40px;
+  width: 30px;
+  height: 30px;
+  margin-top: 100px;
+}
+
+.carousel__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
